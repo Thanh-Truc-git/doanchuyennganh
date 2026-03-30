@@ -1,0 +1,147 @@
+﻿@{
+    ViewData["Title"] = "Trang học tiếng Nhật";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Cột chính -->
+        <div class="col-lg-8">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-primary text-white fw-bold">
+                    LEVEL N1
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+
+                        <!-- TỪ VỰNG -->
+                        <div class="col-md-4 mb-4">
+                            <a asp-controller="Vocabulary" asp-action="Index" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 hover-shadow py-4">
+                                    <i class="bi bi-journal-text text-primary" style="font-size: 3rem;"></i>
+                                    <div class="card-body">
+                                        <h6 class="fw-bold mt-2">TỪ VỰNG</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- NGỮ PHÁP -->
+                        <div class="col-md-4 mb-4">
+                            <a asp-controller="Grammar" asp-action="Index" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 hover-shadow py-4">
+                                    <i class="bi bi-book text-success" style="font-size: 3rem;"></i>
+                                    <div class="card-body">
+                                        <h6 class="fw-bold mt-2">NGỮ PHÁP</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- NGHE HIỂU -->
+                        <div class="col-md-4 mb-4">
+                            <a asp-controller="Listening" asp-action="Index" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 hover-shadow py-4">
+                                    <i class="bi bi-headphones text-danger" style="font-size: 3rem;"></i>
+                                    <div class="card-body">
+                                        <h6 class="fw-bold mt-2">NGHE HIỂU</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- PHÁT ÂM -->
+                        <div class="col-md-4 mb-4">
+                            <a asp-controller="Pronunciation" asp-action="Index" class="text-decoration-none text-dark">
+                                <div class="card h-100 border-0 hover-shadow py-4">
+                                    <i class="bi bi-mic text-warning" style="font-size: 3rem;"></i>
+                                    <div class="card-body">
+                                        <h6 class="fw-bold mt-2">PHÁT ÂM</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- BẢNG CHỮ CÁI -->
+                            <!-- Card 1: Icon sách -->
+                            <div class="col-md-4 mb-4">
+                                <a asp-controller="Home" asp-action="chucai" class="text-decoration-none text-dark">
+                                    <div class="card h-100 border-0 hover-shadow py-4 text-center">
+                                        <i class="bi bi-book text-info" style="font-size: 3rem;"></i>
+                                        <div class="card-body">
+                                            <h6 class="fw-bold mt-2">BẢNG CHỮ CÁI</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cột phụ (Đăng nhập / Thành tích) -->
+        <div class="col-lg-4">
+
+            <!-- THÀNH VIÊN -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-primary text-white fw-bold">
+                    Thành viên 
+                </div>
+                <div class="card-body">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="text-center">
+                            <i class="bi bi-person-circle text-primary mb-3" style="font-size: 4rem;"></i>
+                            <h5 class="fw-bold">@User.Identity.Name</h5>
+                            <p class="text-muted mb-2">Thành viên </p>
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="mt-2">
+    <button type="submit" class="btn btn-outline-danger w-100">Đăng xuất</button>
+</form>
+ </div>
+                    }
+                    else
+                    {
+                        <form asp-controller="Account" asp-action="Login" method="post">
+                            <div class="mb-3">
+                                <input type="text" name="Username" class="form-control" placeholder="Tên đăng nhập hoặc email" required />
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" name="Password" class="form-control" placeholder="Mật khẩu" required />
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+                            <div class="text-center mt-2">
+                                <a asp-controller="Account" asp-action="Register" class="small">Đăng ký</a> ·
+                                <a asp-controller="Account" asp-action="ForgotPassword" class="small">Quên mật khẩu?</a>
+                            </div>
+                        </form>
+                    }
+                </div>
+            </div>
+
+            <!-- THÀNH TÍCH -->
+            <div class="card shadow-sm">
+                <div class="card-header bg-secondary text-white fw-bold">
+                    Thành tích nổi bật
+                </div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-person-badge-fill text-primary me-3" style="font-size:2rem;"></i>
+                        <div>
+                            <strong>thanhbang.it.dn2000</strong><br />
+                            <span class="text-danger fw-bold">8.75 / 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .hover-shadow:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        transform: scale(1.03);
+        transition: 0.2s ease;
+    }
+</style>

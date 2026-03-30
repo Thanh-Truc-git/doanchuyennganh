@@ -1,0 +1,20 @@
+﻿@model Listening
+<h2>@Model.Title</h2>
+<audio controls>
+    <source src="@Url.Content(Model.AudioPath)" type="audio/mpeg">
+</audio>
+
+<form asp-action="Submit" method="post">
+    <input type="hidden" name="listeningId" value="@Model.Id" />
+    @foreach (var q in Model.Questions)
+    {
+        <div class="mb-3">
+            <p>@q.QuestionText</p>
+            <input type="radio" name="answers[@q.Id]" value="A" /> @q.OptionA <br />
+            <input type="radio" name="answers[@q.Id]" value="B" /> @q.OptionB <br />
+            <input type="radio" name="answers[@q.Id]" value="C" /> @q.OptionC <br />
+           
+        </div>
+    }
+    <button type="submit" class="btn btn-primary">Nộp bài</button>
+</form>

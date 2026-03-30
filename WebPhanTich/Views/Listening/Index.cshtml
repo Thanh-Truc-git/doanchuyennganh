@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Listening>
+<h2>Bài nghe</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li><a asp-action="Details" asp-route-id="@item.Id">@item.Title</a></li>
+    }
+</ul>

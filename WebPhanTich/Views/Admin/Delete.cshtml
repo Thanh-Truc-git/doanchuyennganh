@@ -1,0 +1,35 @@
+﻿@model WebPhanTich.Models.PronunciationSample
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Xóa từ mẫu</h2>
+
+<div class="alert alert-danger">
+    Bạn có chắc muốn xóa từ này không?
+</div>
+
+<div class="mb-3">
+    <strong>Từ:</strong> @Model.Word
+</div>
+<div class="mb-3">
+    <strong>IPA:</strong> @Model.IPA
+</div>
+<div class="mb-3">
+    <strong>Mô tả:</strong> @Model.Description
+</div>
+@if (!string.IsNullOrEmpty(Model.AudioPath))
+{
+    <div class="mb-3">
+        <strong>Audio:</strong>
+        <audio controls>
+            <source src="@Model.AudioPath" type="audio/mpeg" />
+        </audio>
+    </div>
+}
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

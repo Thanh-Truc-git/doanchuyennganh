@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Phân tích phát âm";
+}
+
+<h3 class="mb-3 text-center">🎙️ Phân tích phát âm</h3>
+
+<div class="recording-section container">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        var sample = Model[i];
+        <div class="sample-item shadow-sm p-3 mb-4 rounded bg-light">
+            <p>
+                <strong>@sample.Word</strong>
+                <span style="color:gray;">(@sample.IPA)</span><br />
+                <audio controls src="@sample.AudioPath" style="margin-top:5px;"></audio>
+            </p>
+
+            <div class="mt-2">
+                <button type="button" class="startBtn btn btn-success btn-sm" data-index="@i" data-sample-id="@sample.Id">🎤 Bắt đầu ghi</button>
+                <button type="button" class="stopBtn btn btn-danger btn-sm" data-index="@i" disabled>⏹ Dừng</button>
+            </div>
+
+            <audio id="player_@i" controls style="display:none; margin-top:10px; width:100%;"></audio>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const startBtns = document.querySelectorAll(".startBtn");
+            const stopBtns = document.querySelectorAll(".stopBtn");
+
+            const mediaRecorders = [];
+            const chunksList = [];
+
+            startBtns.forEach((btn, idx) => {
+                btn.onclick = async () => {
+                    try {
+                        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                        const mediaRecorder = new MediaRecorder(stream);
+                        mediaRecorders[idx] = mediaRecorder;
+                        chunksList[idx] = [];
+
+                        const sampleId = btn.dataset.sampleId; // ✅ Lấy ID thật của sample
+
+                        mediaRecorder.ondataavailable = e => chunksList[idx].push(e.data);
+
+                        mediaRecorder.onstop = () => {
+                            const blob = new Blob(chunksList[idx], { type: 'audio/wav' });
+                            const url = URL.createObjectURL(blob);
+                            const player = document.getElementById(`player_${idx}`);
+                            player.src = url;
+                            player.style.display = 'block';
+
+                            // ✅ Tạo FormData để upload
+                            const formData = new FormData();
+                            formData.append("sampleId", sampleId);
+                            formData.append("userAudio", blob, "recorded.wav");
+
+                            fetch("/Pronunciation/UploadAudio", {
+                                method: "POST",
+                                body: formData
+                            })
+                            .then(res => {
+                                if (!res.ok) throw new Error("Upload thất bại");
+                                return res.text();
+                            })
+                            .then(msg => {
+                                console.log(msg);
+                                alert("✅ Ghi âm đã được gửi lên thành công!");
+                            })
+                            .catch(err => alert("❌ Lỗi upload: " + err.message));
+
+                            // Dừng mic
+                            stream.getTracks().forEach(t => t.stop());
+                        };
+
+                        mediaRecorder.start();
+                        btn.disabled = true;
+                        stopBtns[idx].disabled = false;
+                    } catch (err) {
+                        alert("⚠️ Trình duyệt không thể truy cập microphone. Hãy cho phép quyền ghi âm!");
+                        console.error(err);
+                    }
+                };
+            });
+
+            stopBtns.forEach((btn, idx) => {
+                btn.onclick = () => {
+                    if (mediaRecorders[idx] && mediaRecorders[idx].state === "recording") {
+                        mediaRecorders[idx].stop();
+                    }
+                    startBtns[idx].disabled = false;
+                    btn.disabled = true;
+                };
+            });
+        });
+    </script>
+}

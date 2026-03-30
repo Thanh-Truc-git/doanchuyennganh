@@ -1,0 +1,794 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\home\\chucai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\home\\chucai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\models\\listeningquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:models\\listeningquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\models\\listening.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:models\\listening.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\controllers\\listeningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:controllers\\listeningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\listening\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\listening\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\listening\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\listening\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\listening\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\listening\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\controllers\\vocabularycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:controllers\\vocabularycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\vocabulary\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\vocabulary\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\models\\pronunciationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:models\\pronunciationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\models\\pronunciationsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:models\\pronunciationsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\vocabulary\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\vocabulary\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\vocabulary\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\vocabulary\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\vocabulary\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\vocabulary\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\models\\vocabulary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:models\\vocabulary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\controllers\\pronunciationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:controllers\\pronunciationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\pronunciation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\pronunciation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\pronunciation\\analyze.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\pronunciation\\analyze.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\controllers\\pronunciationsamplescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:controllers\\pronunciationsamplescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|c:\\users\\thanh\\source\\repos\\doan\\webphantich\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{666682DC-A815-49C5-A241-FAE90694FF4E}|WebPhanTich.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 280,
+          "SelectedChildIndex": 21,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Chucai.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Home\\Chucai.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Chucai.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Home\\Chucai.cshtml",
+              "RelativeToolTip": "Views\\Home\\Chucai.cshtml",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAwwOcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T13:40:59.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T13:39:55.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T13:39:04.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Listening\\Result.cshtml",
+              "RelativeDocumentMoniker": "Views\\Listening\\Result.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Listening\\Result.cshtml",
+              "RelativeToolTip": "Views\\Listening\\Result.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T12:48:12.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Listening\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Listening\\Details.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Listening\\Details.cshtml",
+              "RelativeToolTip": "Views\\Listening\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T12:47:48.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Listening\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Listening\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Listening\\Index.cshtml",
+              "RelativeToolTip": "Views\\Listening\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T12:47:32.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListeningController.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\ListeningController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ListeningController.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\ListeningController.cs",
+              "RelativeToolTip": "Controllers\\ListeningController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T12:46:21.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ListeningQuestion.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\ListeningQuestion.cs",
+              "RelativeDocumentMoniker": "Models\\ListeningQuestion.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\ListeningQuestion.cs*",
+              "RelativeToolTip": "Models\\ListeningQuestion.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T12:35:27.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Listening.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\Listening.cs",
+              "RelativeDocumentMoniker": "Models\\Listening.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\Listening.cs",
+              "RelativeToolTip": "Models\\Listening.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T12:35:06.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T06:56:51.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Category\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Category\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Category\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T05:25:14.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Category\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T05:24:58.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Create.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "Views\\Category\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T05:24:35.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T05:23:57.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T05:23:22.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T05:19:01.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Vocabulary\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Vocabulary\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Vocabulary\\Index.cshtml",
+              "RelativeToolTip": "Views\\Vocabulary\\Index.cshtml",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAcwOMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T03:10:30.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Vocabulary\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Vocabulary\\Create.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Vocabulary\\Create.cshtml",
+              "RelativeToolTip": "Views\\Vocabulary\\Create.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T03:10:22.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AgIAAG8CAAAAAAAAAADwv6ACAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-30T12:50:49.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Analyze.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Pronunciation\\Analyze.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pronunciation\\Analyze.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Pronunciation\\Analyze.cshtml",
+              "RelativeToolTip": "Views\\Pronunciation\\Analyze.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T14:34:23.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAcwEwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T14:22:50.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Vocabulary\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Vocabulary\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Vocabulary\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Vocabulary\\Delete.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAB4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T13:59:27.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Vocabulary\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Vocabulary\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Vocabulary\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Vocabulary\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T13:59:10.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VocabularyController.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\VocabularyController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VocabularyController.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\VocabularyController.cs",
+              "RelativeToolTip": "Controllers\\VocabularyController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T13:44:41.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PronunciationSamplesController.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\PronunciationSamplesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PronunciationSamplesController.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\PronunciationSamplesController.cs",
+              "RelativeToolTip": "Controllers\\PronunciationSamplesController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAkwEYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T13:44:08.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Vocabulary.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\Vocabulary.cs",
+              "RelativeDocumentMoniker": "Models\\Vocabulary.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\Vocabulary.cs",
+              "RelativeToolTip": "Models\\Vocabulary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T13:40:44.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Data\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "Data\\DataSeeder.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Data\\DataSeeder.cs",
+              "RelativeToolTip": "Data\\DataSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T12:42:25.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Pronunciation\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pronunciation\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Pronunciation\\Index.cshtml",
+              "RelativeToolTip": "Views\\Pronunciation\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T04:17:46.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PronunciationController.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\PronunciationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PronunciationController.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\PronunciationController.cs",
+              "RelativeToolTip": "Controllers\\PronunciationController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAUwDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T04:17:11.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Admin\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Admin\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T04:11:59.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Admin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Admin\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Edit.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T04:11:00.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Admin\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Create.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Admin\\Create.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T04:07:20.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T04:06:19.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAGgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T04:05:21.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T03:55:30.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T03:54:05.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T03:50:53.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T03:50:06.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:46:45.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:46:25.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAwwE8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:44:46.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-19T03:27:18.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:23:57.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:23:27.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PronunciationResult.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\PronunciationResult.cs",
+              "RelativeDocumentMoniker": "Models\\PronunciationResult.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\PronunciationResult.cs",
+              "RelativeToolTip": "Models\\PronunciationResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:22:46.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PronunciationSample.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\PronunciationSample.cs",
+              "RelativeDocumentMoniker": "Models\\PronunciationSample.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\PronunciationSample.cs",
+              "RelativeToolTip": "Models\\PronunciationSample.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:21:56.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DOAN\\WebPhanTich\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T03:19:39.721Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 280,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

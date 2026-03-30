@@ -1,0 +1,25 @@
+JSUT (Japanese speech corpus of Saruwatari Lab, University of Tokyo) corpus
+
+LICENCE:
+   Text in this corpus is licensed as follows. The text data were modified to read it easy.
+      basic5000
+         - wikipedia (https://ja.wikipedia.org/) CC-BY-SA 3.0 
+         - TANAKA corpus (http://www.edrdg.org/wiki/index.php/Tanaka_Corpus) CC-BY 2.0
+         - Our original sentences. CC-BY-SA 4.0
+      utparaphrase512
+         - SNOW E4 corpus (http://www.jnlp.org/SNOW/E4) CC BY-SA 4.0
+      onomatopee300
+         - Our original sentences. CC-BY-SA 4.0
+      countersuffix26
+         - Our original sentences. CC-BY-SA 4.0
+      loanword128
+         - Our original sentences. CC-BY-SA 4.0
+      voiceactress100
+         - Voice Actress Corpus (http://voice-statistics.github.io/) CC BY-SA 4.0
+      travel1000
+         - English-Japanese Translation Alignment Data　(http://www2.nict.go.jp/astrec-att/member/mutiyama/align/index.html) CC BY-SA 3.0 
+      precedent130
+         - Copyright-free
+      repeat500
+         - Voice Actress Corpus (http://voice-statistics.github.io/) CC BY-SA 4.0
+

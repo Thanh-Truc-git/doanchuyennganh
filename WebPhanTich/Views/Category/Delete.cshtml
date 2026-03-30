@@ -1,0 +1,25 @@
+﻿@model WebPhanTich.Models.Category
+
+@{
+    ViewData["Title"] = "Xóa danh mục";
+}
+
+<h2 class="text-center text-danger mb-3">⚠️ Xác nhận xóa danh mục</h2>
+
+<div class="shadow-sm p-4 rounded bg-light">
+    <p>Bạn có chắc muốn xóa danh mục sau không?</p>
+
+    <dl class="row">
+        <dt class="col-sm-3 fw-bold">Tên danh mục:</dt>
+        <dd class="col-sm-9">@Model.Name</dd>
+
+        <dt class="col-sm-3 fw-bold">Mô tả:</dt>
+        <dd class="col-sm-9">@Model.Description</dd>
+    </dl>
+
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">🗑️ Xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">↩️ Hủy</a>
+    </form>
+</div>

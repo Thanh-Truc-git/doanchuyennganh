@@ -1,0 +1,44 @@
+10/26/2017 ... ver. 1
+   7666 utterances have been released. Some utterances are missed, but there will be added soon.
+11/30/2017 ... ver. 1.1
+   35 utterances missed (or mispronounced) in ver. 1 have been added. 7696 utterances have been released. The basenames are
+      PRECEDENT130_045
+      LOANWORD128_088
+      ONOMATOPEE300_074
+      BASIC5000_1495
+      BASIC5000_2252
+      BASIC5000_2333
+      BASIC5000_2382
+      BASIC5000_2391
+      BASIC5000_2626
+      BASIC5000_2936
+      BASIC5000_3013
+      BASIC5000_3093
+      BASIC5000_3097
+      BASIC5000_3541
+      BASIC5000_3593
+      BASIC5000_3604
+      BASIC5000_3667
+      BASIC5000_3687
+      BASIC5000_3713
+      BASIC5000_3764
+      BASIC5000_3845
+      BASIC5000_3867
+      BASIC5000_3907
+      BASIC5000_3967
+      BASIC5000_4026
+      BASIC5000_4151
+      BASIC5000_4166
+      BASIC5000_4195
+      BASIC5000_4218
+      BASIC5000_4260
+      BASIC5000_4343
+      BASIC5000_4346
+      BASIC5000_4348
+      BASIC5000_4486
+      BASIC5000_4952.
+   Note that the corresponding recording_info.txt and transcript_utf8.txt were also changed.
+   
+   We slightly modified some basenames listed in transcript_utf8.txt.
+ 
+

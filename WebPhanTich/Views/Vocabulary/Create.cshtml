@@ -1,0 +1,60 @@
+﻿@model WebPhanTich.Models.Vocabulary
+
+@{
+    ViewData["Title"] = "Thêm từ vựng";
+}
+
+<h2 class="text-center mb-4">➕ Thêm từ vựng mới</h2>
+
+<form asp-action="Create" enctype="multipart/form-data" class="container" style="max-width:600px;">
+    <!-- Word -->
+    <div class="mb-3">
+        <label asp-for="Word" class="form-label fw-bold"></label>
+        <input asp-for="Word" class="form-control" />
+        <span asp-validation-for="Word" class="text-danger"></span>
+    </div>
+
+    <!-- Hiragana -->
+    <div class="mb-3">
+        <label asp-for="Hiragana" class="form-label fw-bold"></label>
+        <input asp-for="Hiragana" class="form-control" />
+        <span asp-validation-for="Hiragana" class="text-danger"></span>
+    </div>
+
+    <!-- Katakana -->
+    <div class="mb-3">
+        <label asp-for="Katakana" class="form-label fw-bold"></label>
+        <input asp-for="Katakana" class="form-control" />
+        <span asp-validation-for="Katakana" class="text-danger"></span>
+    </div>
+
+    <!-- Meaning -->
+    <div class="mb-3">
+        <label asp-for="Meaning" class="form-label fw-bold"></label>
+        <input asp-for="Meaning" class="form-control" />
+        <span asp-validation-for="Meaning" class="text-danger"></span>
+    </div>
+
+    <!-- Category -->
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label fw-bold">Danh mục</label>
+        <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.CategoryId">
+            <option value="">-- Chọn danh mục --</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <!-- Audio -->
+    <div class="mb-3">
+        <label class="form-label fw-bold">Âm thanh (tùy chọn)</label>
+        <input type="file" name="AudioFile" class="form-control" accept="audio/*" />
+    </div>
+
+    <!-- Buttons -->
+    <button type="submit" class="btn btn-success">💾 Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary">⬅️ Quay lại</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

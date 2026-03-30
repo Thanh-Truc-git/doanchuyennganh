@@ -1,0 +1,27 @@
+﻿@model WebPhanTich.Models.Category
+
+@{
+    ViewData["Title"] = "Sửa danh mục";
+}
+
+<h2 class="text-center mb-3">✏️ Chỉnh sửa danh mục</h2>
+
+<form asp-action="Edit" method="post" class="shadow-sm p-4 rounded bg-light">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Name" class="form-label fw-bold">Tên danh mục</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Description" class="form-label fw-bold">Mô tả</label>
+        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-success">💾 Cập nhật</button>
+        <a asp-action="Index" class="btn btn-secondary">↩️ Quay lại</a>
+    </div>
+</form>

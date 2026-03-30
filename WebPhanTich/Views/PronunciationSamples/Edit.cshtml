@@ -1,0 +1,48 @@
+﻿@model WebPhanTich.Models.PronunciationSample
+
+@{
+    ViewData["Title"] = "Chỉnh sửa mẫu phát âm";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit" enctype="multipart/form-data" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label>Từ</label>
+        <input asp-for="Word" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>IPA</label>
+        <input asp-for="IPA" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Âm thanh hiện tại</label><br />
+        @if (!string.IsNullOrEmpty(Model.AudioPath))
+        {
+            <audio controls style="height:30px;">
+                <source src="@Model.AudioPath" type="audio/mpeg" />
+            </audio>
+        }
+        else
+        {
+            <span class="text-muted">Chưa có file</span>
+        }
+    </div>
+
+    <div class="form-group">
+        <label>Chọn file mới (nếu muốn thay)</label>
+        <input type="file" name="audioFile" class="form-control" accept="audio/*" />
+    </div>
+
+    <div class="form-group">
+        <label>Mô tả</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">Cập nhật</button>
+    <a asp-action="Index" class="btn btn-secondary mt-2">Hủy</a>
+</form>
