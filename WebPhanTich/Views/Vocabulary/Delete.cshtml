@@ -1,0 +1,46 @@
+﻿@model WebPhanTich.Models.Vocabulary
+
+@{
+    ViewData["Title"] = "Xóa từ vựng";
+}
+
+<h2 class="text-center mb-4 text-danger">🗑️ Xóa từ vựng</h2>
+
+<div class="container" style="max-width:600px;">
+    <dl class="row">
+        <dt class="col-sm-4">Từ vựng tiếng Nhật</dt>
+        <dd class="col-sm-8">@Model.Word</dd>
+
+        <dt class="col-sm-4">Hiragana</dt>
+        <dd class="col-sm-8">@Model.Hiragana</dd>
+
+        <dt class="col-sm-4">Katakana</dt>
+        <dd class="col-sm-8">@Model.Katakana</dd>
+
+        <dt class="col-sm-4">Nghĩa</dt>
+        <dd class="col-sm-8">@Model.Meaning</dd>
+
+        <dt class="col-sm-4">Danh mục</dt>
+        <dd class="col-sm-8">@Model.Category?.Name</dd>
+
+        <dt class="col-sm-4">Âm thanh</dt>
+        <dd class="col-sm-8">
+            @if (!string.IsNullOrEmpty(Model.AudioPath))
+            {
+                <audio controls style="width:100%;">
+                    <source src="@Model.AudioPath" type="audio/mpeg" />
+                </audio>
+            }
+            else
+            {
+                <p>Chưa có âm thanh</p>
+            }
+        </dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">🗑️ Xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">⬅️ Hủy</a>
+    </form>
+</div>

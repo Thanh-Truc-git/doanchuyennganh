@@ -1,0 +1,71 @@
+﻿@model WebPhanTich.Models.Vocabulary
+
+@{
+    ViewData["Title"] = "Chỉnh sửa từ vựng";
+}
+
+<h2 class="text-center mb-4">✏️ Chỉnh sửa từ vựng</h2>
+
+<form asp-action="Edit" enctype="multipart/form-data" class="container" style="max-width:600px;">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Word" class="form-label fw-bold"></label>
+        <input asp-for="Word" class="form-control" />
+        <span asp-validation-for="Word" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Hiragana" class="form-label fw-bold"></label>
+        <input asp-for="Hiragana" class="form-control" />
+        <span asp-validation-for="Hiragana" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Katakana" class="form-label fw-bold"></label>
+        <input asp-for="Katakana" class="form-control" />
+        <span asp-validation-for="Katakana" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Meaning" class="form-label fw-bold"></label>
+        <input asp-for="Meaning" class="form-control" />
+        <span asp-validation-for="Meaning" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label fw-bold">Danh mục</label>
+        <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.CategoryId">
+            <option value="">-- Chọn danh mục --</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label fw-bold">Âm thanh hiện tại (nếu có):</label>
+        @if (!string.IsNullOrEmpty(Model.AudioPath))
+        {
+            <audio controls style="width:100%;">
+                <source src="@Model.AudioPath" type="audio/mpeg" />
+                Trình duyệt không hỗ trợ thẻ audio.
+            </audio>
+        }
+        else
+        {
+            <p>Chưa có âm thanh.</p>
+        }
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label fw-bold">Thay âm thanh mới (tùy chọn):</label>
+        <input type="file" name="AudioFile" class="form-control" accept="audio/*" />
+        <small class="text-muted">Nếu không chọn file, âm thanh cũ sẽ được giữ nguyên.</small>
+    </div>
+
+    <button type="submit" class="btn btn-primary">💾 Cập nhật</button>
+    <a asp-action="Index" class="btn btn-secondary">⬅️ Quay lại</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

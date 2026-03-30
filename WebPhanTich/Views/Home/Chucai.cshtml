@@ -1,0 +1,231 @@
+﻿@{
+    ViewBag.Title = "Học Hiragana & Katakana";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Hiragana & Katakana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff8e7;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffd27f;
+            padding: 20px;
+            text-align: center;
+        }
+
+            header nav button {
+                margin: 0 10px;
+                padding: 10px 20px;
+                border: none;
+                background: #fff;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+                header nav button:hover {
+                    background-color: #ffe69e;
+                }
+
+        #search {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+            #search input {
+                padding: 8px 12px;
+                font-size: 16px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+        #alphabet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+        }
+
+        .alphabet-card {
+            padding: 15px 20px;
+            margin: 3px 0;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: bold;
+            min-width: 50px;
+            min-height: 60px;
+        }
+
+        .alphabet-char {
+            font-size: 28px;
+            margin-bottom: 3px;
+        }
+
+        .alphabet-reading {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ffd27f;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Học Hiragana & Katakana</h1>
+        <nav>
+            <button id="hiraganaBtn">Hiragana</button>
+            <button id="katakanaBtn">Katakana</button>
+        </nav>
+    </header>
+
+    <section id="search">
+        <input type="text" id="searchInput" placeholder="Tìm chữ cái hoặc phiên âm...">
+    </section>
+
+    <section id="alphabet"></section>
+
+    <footer>
+        <p>© 2025 Trang học tiếng Nhật | Hiragana & Katakana</p>
+    </footer>
+
+    <script>
+        const rowColors = {
+            'a':'#FFEBEE','ka':'#FFF3E0','sa':'#E8F5E9','ta':'#E3F2FD',
+            'na':'#F3E5F5','ha':'#FFFDE7','ma':'#E0F7FA','ya':'#FBE9E7',
+            'ra':'#F1F8E9','wa':'#FCE4EC','dakuten':'#E0E0E0','yoon':'#FFF9C4'
+        };
+
+        // Nhóm chữ Hiragana
+        const hiraganaGroups = {
+            normal: [
+                {char:'あ',reading:'a',row:'a'},{char:'い',reading:'i',row:'a'},{char:'う',reading:'u',row:'a'},
+                {char:'え',reading:'e',row:'a'},{char:'お',reading:'o',row:'a'},
+                {char:'か',reading:'ka',row:'ka'},{char:'き',reading:'ki',row:'ka'},{char:'く',reading:'ku',row:'ka'},
+                {char:'け',reading:'ke',row:'ka'},{char:'こ',reading:'ko',row:'ka'},
+                {char:'さ',reading:'sa',row:'sa'},{char:'し',reading:'shi',row:'sa'},{char:'す',reading:'su',row:'sa'},
+                {char:'せ',reading:'se',row:'sa'},{char:'そ',reading:'so',row:'sa'},
+                {char:'た',reading:'ta',row:'ta'},{char:'ち',reading:'chi',row:'ta'},{char:'つ',reading:'tsu',row:'ta'},
+                {char:'て',reading:'te',row:'ta'},{char:'と',reading:'to',row:'ta'},
+                {char:'な',reading:'na',row:'na'},{char:'に',reading:'ni',row:'na'},{char:'ぬ',reading:'nu',row:'na'},
+                {char:'ね',reading:'ne',row:'na'},{char:'の',reading:'no',row:'na'},
+                {char:'は',reading:'ha',row:'ha'},{char:'ひ',reading:'hi',row:'ha'},{char:'ふ',reading:'fu',row:'ha'},
+                {char:'へ',reading:'he',row:'ha'},{char:'ほ',reading:'ho',row:'ha'},
+                {char:'ま',reading:'ma',row:'ma'},{char:'み',reading:'mi',row:'ma'},{char:'む',reading:'mu',row:'ma'},
+                {char:'め',reading:'me',row:'ma'},{char:'も',reading:'mo',row:'ma'},
+                // Hàng ya yu yo, chèn ô trống
+                {char:'や',reading:'ya',row:'ya'},{char:'',reading:'',row:'ya'},{char:'ゆ',reading:'yu',row:'ya'},
+                {char:'',reading:'',row:'ya'},{char:'よ',reading:'yo',row:'ya'},
+                {char:'ら',reading:'ra',row:'ra'},{char:'り',reading:'ri',row:'ra'},{char:'る',reading:'ru',row:'ra'},
+                {char:'れ',reading:'re',row:'ra'},{char:'ろ',reading:'ro',row:'ra'},
+                {char:'わ',reading:'wa',row:'wa'},{char:'',reading:'',row:'wa'},{char:'',reading:'',row:'wa'},{char:'',reading:'',row:'wa'},{char:'を',reading:'wo',row:'wa'},
+                {char:'',reading:'',row:'wa'},{char:'',reading:'',row:'wa'},{char:'',reading:'',row:'wa'},{char:'',reading:'',row:'wa'},{char:'ん',reading:'n',row:'wa'}
+            ],
+            dakuten: [
+                {char:'が',reading:'ga',row:'dakuten'},{char:'ぎ',reading:'gi',row:'dakuten'},
+                {char:'ぐ',reading:'gu',row:'dakuten'},{char:'げ',reading:'ge',row:'dakuten'},{char:'ご',reading:'go',row:'dakuten'},
+                {char:'ざ',reading:'za',row:'dakuten'},{char:'じ',reading:'ji',row:'dakuten'},
+                {char:'ず',reading:'zu',row:'dakuten'},{char:'ぜ',reading:'ze',row:'dakuten'},{char:'ぞ',reading:'zo',row:'dakuten'},
+                {char:'だ',reading:'da',row:'dakuten'},{char:'ぢ',reading:'ji',row:'dakuten'},
+                {char:'づ',reading:'zu',row:'dakuten'},{char:'で',reading:'de',row:'dakuten'},{char:'ど',reading:'do',row:'dakuten'},
+                {char:'ば',reading:'ba',row:'dakuten'},{char:'び',reading:'bi',row:'dakuten'},
+                {char:'ぶ',reading:'bu',row:'dakuten'},{char:'べ',reading:'be',row:'dakuten'},{char:'ぼ',reading:'bo',row:'dakuten'},
+                {char:'ぱ',reading:'pa',row:'dakuten'},{char:'ぴ',reading:'pi',row:'dakuten'},
+                {char:'ぷ',reading:'pu',row:'dakuten'},{char:'ぺ',reading:'pe',row:'dakuten'},{char:'ぽ',reading:'po',row:'dakuten'}
+            ],
+            yoon: [
+                {char:'きゃ',reading:'kya',row:'yoon'},{char:'きゅ',reading:'kyu',row:'yoon'},{char:'きょ',reading:'kyo',row:'yoon'},
+                {char:'しゃ',reading:'sha',row:'yoon'},{char:'しゅ',reading:'shu',row:'yoon'},{char:'しょ',reading:'sho',row:'yoon'},
+                {char:'ちゃ',reading:'cha',row:'yoon'},{char:'ちゅ',reading:'chu',row:'yoon'},{char:'ちょ',reading:'cho',row:'yoon'},
+                {char:'にゃ',reading:'nya',row:'yoon'},{char:'にゅ',reading:'nyu',row:'yoon'},{char:'にょ',reading:'nyo',row:'yoon'},
+                {char:'ひゃ',reading:'hya',row:'yoon'},{char:'ひゅ',reading:'hyu',row:'yoon'},{char:'ひょ',reading:'hyo',row:'yoon'},
+                {char:'みゃ',reading:'mya',row:'yoon'},{char:'みゅ',reading:'myu',row:'yoon'},{char:'みょ',reading:'myo',row:'yoon'},
+                {char:'りゃ',reading:'rya',row:'yoon'},{char:'りゅ',reading:'ryu',row:'yoon'},{char:'りょ',reading:'ryo',row:'yoon'},
+                {char:'ぎゃ',reading:'gya',row:'yoon'},{char:'ぎゅ',reading:'gyu',row:'yoon'},{char:'ぎょ',reading:'gyo',row:'yoon'},
+                {char:'じゃ',reading:'ja',row:'yoon'},{char:'じゅ',reading:'ju',row:'yoon'},{char:'じょ',reading:'jo',row:'yoon'},
+                {char:'びゃ',reading:'bya',row:'yoon'},{char:'びゅ',reading:'byu',row:'yoon'},{char:'びょ',reading:'byo',row:'yoon'},
+                {char:'ぴゃ',reading:'pya',row:'yoon'},{char:'ぴゅ',reading:'pyu',row:'yoon'},{char:'ぴょ',reading:'pyo',row:'yoon'}
+            ]
+        };
+
+        // Convert sang Katakana
+        function convertKatakana(list){
+            const mapChar = { /* ... tương tự như trước ... */ };
+            return list.map(item=>({...item,char:mapChar[item.char] || item.char}));
+        }
+
+        const alphabetSection=document.getElementById('alphabet');
+        const searchInput=document.getElementById('searchInput');
+        let currentGroup=hiraganaGroups;
+
+        function displayGroup(group){
+            alphabetSection.innerHTML='';
+            for(const key of ['normal','dakuten','yoon']){
+                const list=group[key];
+                const cols=[];
+                const perColumn=5;
+                for(let i=0;i<list.length;i+=perColumn){
+                    cols.push(list.slice(i,i+perColumn));
+                }
+                cols.forEach(col=>{
+                    const colDiv=document.createElement('div');
+                    colDiv.className='column';
+                    col.forEach(item=>{
+                        const card=document.createElement('div');
+                        card.className='alphabet-card';
+                        card.style.backgroundColor=rowColors[item.row] || '#fff3e0';
+                        card.innerHTML=item.char?`<div class="alphabet-char">${item.char}</div><div class="alphabet-reading">${item.reading}</div>`:'&nbsp;';
+                        colDiv.appendChild(card);
+                    });
+                    alphabetSection.appendChild(colDiv);
+                });
+            }
+        }
+
+        // Khởi tạo
+        displayGroup(currentGroup);
+
+        // Nút Hiragana / Katakana
+        document.getElementById('hiraganaBtn').addEventListener('click',()=>{ currentGroup=hiraganaGroups; displayGroup(currentGroup); });
+        document.getElementById('katakanaBtn').addEventListener('click',()=>{
+            const katakanaGroup={};
+            for(const key in hiraganaGroups){ katakanaGroup[key]=convertKatakana(hiraganaGroups[key]); }
+            currentGroup=katakanaGroup;
+            displayGroup(currentGroup);
+        });
+
+        // Tìm kiếm
+        searchInput.addEventListener('input',()=>{
+            const filter=searchInput.value.toLowerCase();
+            const filteredGroup={};
+            for(const key in currentGroup){
+                filteredGroup[key]=currentGroup[key].filter(item=>item.char.includes(filter)||item.reading.includes(filter));
+            }
+            displayGroup(filteredGroup);
+        });
+    </script>
+
+</body>
+</html>

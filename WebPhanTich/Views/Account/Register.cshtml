@@ -1,0 +1,25 @@
+﻿@model WebPhanTich.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Đăng ký tài khoản";
+}
+
+<h2 class="text-center mt-4">Đăng ký tài khoản</h2>
+
+<form asp-action="Register" method="post" class="col-md-6 offset-md-3 mt-3">
+    <div class="form-group mb-3">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label>Mật khẩu</label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label>Họ và tên</label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Đăng ký</button>
+</form>

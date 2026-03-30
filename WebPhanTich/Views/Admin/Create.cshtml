@@ -1,0 +1,26 @@
+﻿@model WebPhanTich.Models.PronunciationSample
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thêm từ mẫu mới</h2>
+
+<form asp-action="Create" enctype="multipart/form-data" method="post">
+    <div class="mb-3">
+        <label>Từ</label>
+        <input asp-for="Word" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>IPA</label>
+        <input asp-for="IPA" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Mô tả</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+        <label>Audio</label>
+        <input type="file" name="audioFile" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Lưu</button>
+</form>
